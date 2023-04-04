@@ -500,24 +500,25 @@ header .icons #menu-bars{
 
 
 
-
-
-@media (max-width:960px){
+@media  (max-width: 960px){
     html{
-        font-size: 55%;
+        font-size: 50%;
     }
-
-    header{
-        padding: 1rem 2rem;
-    }
-
-    section{
-        padding:2rem;
-    }
+    
 }
 
 
-@media (max-width:750px){
+
+
+
+
+
+
+@media  (max-width:750px){
+
+    html{
+        font-size: 50%;
+    }
     header .icons #menu-bars{
         display: inline-block;
     }
@@ -565,21 +566,4 @@ header .icons #menu-bars{
 
 
 
-
-
-@media (max-width:960px){
-    html{
-        font-size: 50%;
-    }
-
-    .dishes .box-container .box img{
-        height: auto;
-        width: 100%;
-    }
-
-    .btn{
-        font-size: .9rem;
-    }
-    
-}
 
