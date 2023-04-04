@@ -343,6 +343,9 @@ header .icons #menu-bars{
     color: #ffd700;
 }
 
+.dishes .box-container .box span{
+    color: #fff;
+}
 
 .about .row{
     display: flex;
@@ -367,7 +370,7 @@ header .icons #menu-bars{
 
 
 .about .row .content h3{
-    color: var(--black);
+    color: #fff;
     font-size: 4rem;
     padding: .5rem 0;
 }
@@ -418,7 +421,7 @@ header .icons #menu-bars{
 }
 
 .menu .box-container .box{
-    background: #fff;
+    background:blac;
     border:.1rem solid rgba(0,0,0,.2);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
@@ -436,6 +439,11 @@ header .icons #menu-bars{
     height: 100%;
     width: 100%;
     border-radius: .5rem;
+}
+
+.menu .box-container .box p{
+    color: white;
+    font-size: 25px;
 }
 
 
