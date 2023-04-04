@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#505456,#f3ebeb);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background:#fff;
+    padding-top: 5px;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#505456,#f3ebeb);
+}
+
+.container form .user-detalist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-detalist .input-box{ 
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-detalist .input-box .detalist{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-detalist .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-detalist .input-box input:focus,
+.user-detalist .input-box input:valid{
+   border-color:#505456
+}
+
+form .gender-detalist .gender-title{
+    font-size:20px;
+    font-weight: 500;
+   
+
+}
+
+form .gender-detalist .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+
+.gender-detalist .category label{
+     display: flex;
+     align-items: center;
+}
+
+.gender-detalist .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color:#505456;
+    background: #f3ebeb
+}
+
+form input[type='radior']{
+    display: none;
+}
+
+
+form .button{
+   height: 45px;
+   margin: 45px 0;
+}
+
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color:#fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#505456,#f3ebeb);
+}
+
+
+form .button input:hover{
+    background:linear-gradient(-135deg,#505456,#f3ebeb);
+
+}
+
+
+
+
+#button_index{
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(135deg,#505456,#f3ebeb);
+}
+
+#button_index a{
+    color: white;
+    text-decoration: none;
+    font: 12px;
+}
+
+#button_index:hover{
+    transition: 0.5s ease;
+    background: linear-gradient(-135deg,#505456,#f3ebeb);
+
+}
+
+@media  (max-width:584px){
+    .container{
+       max-width:100%;
+
+    }
+
+    form .user-detalist .input-box{ 
+       margin-bottom: 15px;
+       width: 100%;
+   }
+   
+   form .gender-detalist .category{
+       width: 100%;
+
+   }
+
+   .container form .user-detalist{
+       max-height: 300px;
+       overflow-y:scroll;
+   }
+
+   .user-detalist::-webkit-scrollbar{
+       width: 0;
+   }
+}
+
+.gender-detalist input{
+   background:#505456 ;
+}
