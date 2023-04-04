@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@200;300;400;600;700&display=swap');
 
+body{
+    background-color:black;
+}
 
 :root{
     --green:#27ae60;
@@ -35,8 +38,10 @@ section{
 }
 
 
+
+
 section:nth-child(even){
-   background: #eee;
+   background: black;
 
 }
 
@@ -73,7 +78,7 @@ header{
 
 
 header .logo{
-    color: var(--black);
+    color: #fff;
     font-size: 2.5rem;
     font-weight: bolder;
 }
@@ -82,11 +87,21 @@ header .logo i{
     color: var(--green);
 }
 
+header {
+    background-color: black;;
+}
+
+.div-head{
+    height: 10px;
+    background: #fff;
+}
+
+
 header .navbar a{
    font-size: 1.7rem;
    border-radius: .5rem;
    padding: .5rem 1.5rem;
-   color: var(--light-color);
+   color: #fff;
 
 }
 header .navbar a.active,
@@ -197,6 +212,7 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
+
 .home .home-slider .slide{
     display: flex;
     align-items: center;
@@ -226,7 +242,7 @@ header .icons #menu-bars{
 
 
 .home .home-slider .slide .content h3{
-    color: var(--black);
+    color: #fff;
     font-size: 7rem;
 }
 
@@ -247,7 +263,7 @@ header .icons #menu-bars{
 
 .dishes .box-container .box{
     padding: 2.5rem;
-    background-color: #fff;
+    background-color: black;
     border-radius: .5rem;
     border:.1rem solid rgba(0,0,0,.2);
     box-shadow: var(--box-shadow);
@@ -292,6 +308,10 @@ header .icons #menu-bars{
     color: #fff;
 }
 
+.heading{
+    color: #fff;
+}
+
 
 
 
@@ -305,12 +325,12 @@ header .icons #menu-bars{
 }
 
 .dishes .box-container .box h3{
-    color: var(--black);
+    color: #fff;
     font-size: 2.5rem;
 }
 
 .dishes .box-container .box h3{
-     color: var(--black);
+     color: #fff;
      font-size: 2.5rem;
 }
 
@@ -320,7 +340,7 @@ header .icons #menu-bars{
 
 .dishes .box-container .box .stars i{
     font-size: 1.7rem;
-    color: var(--green);
+    color: #ffd700;
 }
 
 
@@ -449,7 +469,7 @@ header .icons #menu-bars{
 
 .menu .box-container .box .content .stars i{
     font-size: 1.7rem;
-    color: var(--green);
+    color: #ffd700;
 }
 
 .menu .box-container .box .content h3{
@@ -561,7 +581,3 @@ header .icons #menu-bars{
     
 }
 
-
-@media (max-width:616px){
-
-}
